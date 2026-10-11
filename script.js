@@ -244,6 +244,7 @@ function setupCountdown() {
 
 /* ---------- easter egg en el "&" ---------- */
 function setupAmp() {
+  if (!$("#amp")) return;
   let clicks = 0;
   const msgs = ["💜", "Again?", "Keep going…", "Almost!", "🎉 You found the surprise! A dance with the newlyweds is guaranteed."];
   $("#amp").addEventListener("click", e => {
