@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nata & Javi · December 5</title>
+  <meta name="description" content="We're getting married! Nata & Javi, December 5, 2026." />
+  <meta property="og:title" content="Nata & Javi · Save the date" />
+  <meta property="og:description" content="December 5, 2026. We hope to see you there!" />
+  <meta name="theme-color" content="#fbf8f6" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9" />
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script defer src="script.js?v=9"></script>
+</head>
+<body class="is-locked">
+
+<!-- ================= SVG: flores del parte ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="watercolor" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="petalGrad" cx="0" cy="0" r="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8327e"/>
+      <stop offset=".16" stop-color="#cf6fb4"/>
+      <stop offset=".42" stop-color="#d79ae6"/>
+      <stop offset=".8" stop-color="#e6bdf0"/>
+      <stop offset="1" stop-color="#f1dcf6"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="0" y2="-1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7f9367"/>
+      <stop offset="1" stop-color="#c8d4b4"/>
+    </linearGradient>
+    <g id="petal">
+      <path d="M0,0 C-26,-14 -46,-58 -34,-88 C-28,-102 -16,-108 -8,-103 C-4,-110 4,-110 8,-103 C16,-108 28,-102 34,-88 C46,-58 26,-14 0,0Z" fill="url(#petalGrad)" opacity=".93"/>
+      <g stroke="#fff" stroke-width="1.1" stroke-dasharray="3 3" fill="none" opacity=".55">
+        <path d="M0,-6 L0,-98"/><path d="M-3,-10 C-14,-40 -20,-66 -22,-88"/><path d="M3,-10 C14,-40 20,-66 22,-88"/>
+      </g>
+    </g>
+    <g id="flower">
+      <g filter="url(#watercolor)">
+        <use href="#petal"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <g stroke="#c2185b" stroke-width="1.2" opacity=".8">
+        <path d="M0,0 L-14,-20 M0,0 L16,-18 M0,0 L22,6 M0,0 L-20,10 M0,0 L2,24 M0,0 L-24,-4 M0,0 L10,-24"/>
+      </g>
+      <circle r="9" fill="#f4d9a8"/>
+      <circle r="5" fill="#e7b75a"/>
+      <circle r="2" fill="#c2185b"/>
+    </g>
+    <path id="leaf" d="M0,0 C14,-12 16,-40 0,-58 C-16,-40 -14,-12 0,0Z" fill="url(#leafGrad)"/>
+    <g id="bud"><ellipse rx="5" ry="8" fill="#a07fcf"/><ellipse rx="3" ry="5" cy="-2" fill="#c9a6e6"/></g>
+    <!-- ramillete de esquina (como el parte) -->
+    <g id="bouquet">
+      <g fill="none" stroke="#8fa07a" stroke-width="2" stroke-linecap="round">
+        <path d="M250,180 C200,150 150,120 90,110"/>
+        <path d="M250,180 C230,120 215,70 205,10"/>
+        <path d="M250,180 C255,250 250,300 240,380"/>
+        <path d="M160,128 C140,90 110,70 70,62"/>
+        <path d="M245,300 C210,320 190,350 185,390"/>
+        <path d="M120,114 C95,135 70,150 40,152"/>
+      </g>
+      <g filter="url(#watercolor)">
+        <use href="#leaf" transform="translate(150,124) rotate(-120) scale(.9)"/>
+        <use href="#leaf" transform="translate(185,140) rotate(-30) scale(.8)"/>
+        <use href="#leaf" transform="translate(115,113) rotate(-60) scale(.7)"/>
+        <use href="#leaf" transform="translate(222,90) rotate(-80) scale(.8)"/>
+        <use href="#leaf" transform="translate(212,50) rotate(30) scale(.7)"/>
+        <use href="#leaf" transform="translate(250,260) rotate(60) scale(.9)"/>
+        <use href="#leaf" transform="translate(248,230) rotate(-110) scale(.8)"/>
+        <use href="#leaf" transform="translate(244,330) rotate(50) scale(.75)"/>
+        <use href="#leaf" transform="translate(205,330) rotate(-140) scale(.7)"/>
+        <use href="#leaf" transform="translate(190,365) rotate(40) scale(.6)"/>
+        <use href="#leaf" transform="translate(75,63) rotate(-100) scale(.55)"/>
+      </g>
+      <g>
+        <use href="#bud" transform="translate(90,108) rotate(-70)"/>
+        <use href="#bud" transform="translate(80,96) rotate(-40) scale(.8)"/>
+        <use href="#bud" transform="translate(70,60) rotate(-80) scale(.9)"/>
+        <use href="#bud" transform="translate(58,70) rotate(-60) scale(.7)"/>
+        <use href="#bud" transform="translate(40,150) rotate(-100) scale(.8)"/>
+        <use href="#bud" transform="translate(205,10) scale(.9)"/>
+        <use href="#bud" transform="translate(196,24) rotate(-20) scale(.7)"/>
+        <use href="#bud" transform="translate(240,380) rotate(180) scale(.9)"/>
+        <use href="#bud" transform="translate(252,368) rotate(160) scale(.7)"/>
+        <use href="#bud" transform="translate(185,390) rotate(190) scale(.8)"/>
+      </g>
+      <use href="#flower" transform="translate(250,180) rotate(14) scale(1.05)"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ================= INTRO: el sobre ================= -->
+<section id="intro" class="intro" aria-label="Open the invitation">
+  <div class="intro-petals" aria-hidden="true"></div>
+  <div class="envelope" id="envelope">
+    <div class="env-back"></div>
+    <div class="env-card">
+      <svg class="corner tr" viewBox="0 0 300 400"><use href="#bouquet"/></svg>
+      <p class="caps">Save the date</p>
+      <p class="mini-names">Nata <span>&amp;</span> Javi</p>
+      <p class="caps small">12 · 5 · 2026</p>
+    </div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <button class="seal" id="seal" type="button" aria-label="Open invitation">
+      <span>N<i>&amp;</i>J</span>
+    </button>
+  </div>
+  <form class="unlock" id="unlock" autocomplete="off">
+    <label for="pw">Enter the password from your invitation</label>
+    <div class="unlock-row">
+      <input id="pw" type="password" placeholder="Password" autocapitalize="off" spellcheck="false" required>
+      <button class="btn primary" type="submit">Open</button>
+    </div>
+    <p class="unlock-msg" id="unlockMsg" role="alert" aria-live="polite"></p>
+  </form>
+  <p class="intro-hint" id="introHint" hidden>Tap the seal to open ✨</p>
+</section>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav" aria-label="Sections">
+  <a href="#inicio">Home</a>
+  <a href="#nosotros">Us</a>
+  <a href="#coordenadas">Details</a>
+  <a href="#programa">Schedule</a>
+  <a href="#juego">Game</a>
+  <a href="#rsvp" class="nav-cta">RSVP</a>
+  <a href="#regalos">Gifts</a>
+</nav>
+
+<main id="main">
+
+  <!-- ================= HERO = el parte ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid">
+    <div class="parte">
+      <span class="frame"></span>
+      <svg class="corner tr sway" viewBox="0 0 300 400" aria-hidden="true"><use href="#bouquet"/></svg>
+      <svg class="corner bl sway-2" viewBox="0 0 300 400" aria-hidden="true"><use href="#bouquet"/></svg>
+      <div class="parte-text">
+        <p class="caps reveal">Save the date</p>
+        <span class="rule"></span>
+        <h1 class="names">
+          <span class="n1">Nata</span>
+          <button class="amp" id="amp" type="button" aria-label="Surprise">&amp;</button>
+          <span class="n2">Javi</span>
+        </h1>
+        <span class="rule"></span>
+        <p class="caps date">December 5, 2026</p>
+      </div>
+    </div>
+      <figure class="hero-photo">
+        <img id="heroImg" alt="Nata and Javi in raincoats in a southern Chile forest">
+      </figure>
+    </div>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div><b id="cd-d">--</b><span>days</span></div>
+      <div><b id="cd-h">--</b><span>hours</span></div>
+      <div><b id="cd-m">--</b><span>min</span></div>
+      <div><b id="cd-s">--</b><span>sec</span></div>
+    </div>
+    <p class="countdown-note" id="countdownNote">until we hit the dance floor 💃🕺</p>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#rsvp">RSVP</a>
+      <a class="btn" href="#coordenadas">Where & when?</a>
+    </div>
+    <a class="scroll-hint" href="#nosotros" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section class="section" id="nosotros">
+    <div class="heading">
+      <p class="caps">We're getting married</p>
+      <h2>…and we want you there</h2>
+      <p class="lead">After many hikes, rainstorms, cities, birthday cakes and badly angled selfies, we decided to make it official. Join us for a night of pisco sours, Chilean spit-roasted lamb and lots of dancing.</p>
+    </div>
+
+    <div class="polaroid-table" id="polaroids" aria-label="Photos you can drag">
+      <!-- generado en script.js -->
+    </div>
+    <p class="hint">👆 Drag the photos, tap one to see it big, or <button class="link-btn" id="shuffle" type="button">shuffle them</button></p>
+  </section>
+
+  <!-- ================= COORDENADAS ================= -->
+  <section class="section tinted" id="coordenadas">
+    <div class="heading">
+      <p class="caps">The details</p>
+      <h2>Write this down everywhere</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face">
+            <span class="ico">📅</span>
+            <span class="label">Date</span>
+            <strong>Saturday, December 5, 2026</strong>
+            <small>tap me</small>
+          </div>
+          <div class="face back">
+            <p>Yes, it's a Saturday. Yes, you can sleep in on Sunday. You're welcome. 😴</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face">
+            <span class="ico">🕕</span>
+            <span class="label">Time</span>
+            <strong>6:00 PM</strong>
+            <small>tap me</small>
+          </div>
+          <div class="face back">
+            <p>Be on time: the first pisco sours are made with lemons from the house and they go fast. 🍋</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face">
+            <span class="ico">📍</span>
+            <span class="label">Place</span>
+            <strong data-cfg="lugar">El Tranque 174</strong>
+            <small data-cfg="direccion">Chicureo, Colina (Santiago, Chile)</small>
+          </div>
+          <div class="face back">
+            <p>Yes: it's at a house with a lemon tree, a lawn and a dance floor. Couldn't be cozier. 🏡</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face">
+            <span class="ico">👗</span>
+            <span class="label">Dress code</span>
+            <strong>Smart casual</strong>
+            <small>tap me</small>
+          </div>
+          <div class="face back">
+            <p>December is summer in Chile + grass = skip the stilettos. Wear shoes you can dance in until late. 👟</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="cal-actions">
+      <a class="btn primary" id="gcal" target="_blank" rel="noopener">Add to Google Calendar</a>
+      <button class="btn" id="ics" type="button">Download for iPhone / Outlook</button>
+      <a class="btn" id="maps" target="_blank" rel="noopener">Open in Google Maps</a>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAMA ================= -->
+  <section class="section" id="programa">
+    <div class="heading">
+      <p class="caps">The schedule</p>
+      <h2>How the night will go</h2>
+    </div>
+
+    <ol class="timeline" id="timeline">
+      <li>
+        <time>6:00 PM</time>
+        <div class="tl-dot">🍋</div>
+        <div class="tl-body">
+          <h3>Arrival & pisco sours</h3>
+          <p>Pisco sours made with lemons from the house, appetizers and live music.</p>
+        </div>
+      </li>
+      <li>
+        <time>7:00 PM</time>
+        <div class="tl-dot">💍</div>
+        <div class="tl-body">
+          <h3>WE'RE GETTING MARRIED!!!</h3>
+          <p>Just us, our own words, and all of you as witnesses.</p>
+        </div>
+      </li>
+      <li>
+        <time>7:30 PM</time>
+        <div class="tl-dot">👧</div>
+        <div class="tl-body">
+          <h3>The girls bring in the rings</h3>
+          <p>The sweetest (and most unpredictable) moment of the night.</p>
+        </div>
+      </li>
+      <li>
+        <time>7:45 PM</time>
+        <div class="tl-dot">📸</div>
+        <div class="tl-body">
+          <h3>Family photos</h3>
+          <p>Smile, this one is going on grandma's wall.</p>
+        </div>
+      </li>
+      <li>
+        <time>8:00 PM</time>
+        <div class="tl-dot">🪩</div>
+        <div class="tl-body">
+          <h3>Let the dancing begin</h3>
+          <p>Spit-roasted lamb, a cocktail bar and dancing until our feet give out.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="menu">
+      <div class="menu-item"><span>🍋</span><b>Pisco sour</b><small>Chile's classic, with lemons from the house</small></div>
+      <div class="menu-item"><span>🔥</span><b>Cordero al palo</b><small>spit-roasted lamb, the traditional way</small></div>
+      <div class="menu-item"><span>🍸</span><b>Cocktail bar</b><small>in moderation (or not)</small></div>
+    </div>
+  </section>
+
+  <!-- ================= JUEGO: MEMORICE ================= -->
+  <section class="section tinted" id="juego">
+    <div class="heading">
+      <p class="caps">While you wait</p>
+      <h2>Nata &amp; Javi's memory game</h2>
+      <p class="lead">Find the pairs as fast as you can. Do it in under 30 moves and the first pisco sour is on us (bride and groom's promise).</p>
+    </div>
+
+    <div class="game-bar">
+      <span>Moves: <b id="moves">0</b></span>
+      <span>Time: <b id="time">0:00</b></span>
+      <span>Best: <b id="best">—</b></span>
+      <button class="btn small" id="restart" type="button">Restart</button>
+    </div>
+    <div class="memory" id="memory" aria-label="Memory game"></div>
+    <p class="game-win" id="gameWin" hidden></p>
+  </section>
+
+  <!-- ================= RSVP ================= -->
+  <section class="section" id="rsvp">
+    <div class="heading">
+      <p class="caps">RSVP</p>
+      <h2>Are you coming?</h2>
+      <p class="lead">Let us know as soon as you can so we can get everything ready to throw the party of the year.</p>
+    </div>
+
+    <form class="rsvp" id="rsvpForm" novalidate>
+      <div class="choice" role="radiogroup" aria-label="Are you coming?">
+        <label class="pill"><input type="radio" name="va" value="si" checked><span>🎉 Wouldn't miss it!</span></label>
+        <label class="pill"><input type="radio" name="va" value="no"><span>😢 Can't make it</span></label>
+      </div>
+
+      <label>Name(s)
+        <input name="nombre" type="text" placeholder="e.g. Emma and Liam" required>
+      </label>
+
+      <div class="row going-only">
+        <label>Adults
+          <div class="stepper"><button type="button" data-step="-1">−</button><input name="adultos" type="number" min="0" max="10" value="1"><button type="button" data-step="1">+</button></div>
+        </label>
+        <label>Kids
+          <div class="stepper"><button type="button" data-step="-1">−</button><input name="ninos" type="number" min="0" max="10" value="0"><button type="button" data-step="1">+</button></div>
+        </label>
+      </div>
+
+      <label class="going-only">Any dietary restrictions?
+        <input name="comida" type="text" placeholder="Vegetarian, gluten-free, allergic to cilantro…">
+      </label>
+
+      <label class="going-only">The song that will get you on the dance floor 🎶
+        <input name="cancion" type="text" placeholder="e.g. Dancing Queen, Despacito, September…">
+      </label>
+
+      <label>A little note for the couple
+        <textarea name="mensaje" rows="3" placeholder="Marriage advice welcome 😅"></textarea>
+      </label>
+
+      <button class="btn primary big" type="submit">Send RSVP via WhatsApp</button>
+      <p class="form-note">WhatsApp opens with your answer ready to go: just hit send.</p>
+    </form>
+  </section>
+
+  <!-- ================= REGALOS ================= -->
+  <section class="section tinted" id="regalos">
+    <div class="heading">
+      <p class="caps">Gifts</p>
+      <h2>Your presence is the best gift</h2>
+      <p class="lead">But if you'd still like to give us something, we love adventures (just look at the photos 😅). Build your gift from the list below. Prices are in Chilean pesos (CLP).</p>
+    </div>
+
+    <div class="gifts" id="gifts"></div>
+
+    <div class="gift-total">
+      <div><span>Your gift</span><strong id="giftTotal">$0</strong></div>
+      <input class="gift-name" id="giftName" type="text" placeholder="Your name" aria-label="Your name">
+      <button class="btn primary" id="giftSend" type="button" disabled>Let them know on WhatsApp</button>
+    </div>
+
+    <div class="bank">
+      <h3>Bank transfer details</h3>
+      <dl id="bankData"></dl>
+      <button class="btn small" id="copyBank" type="button">Copy details</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <svg class="corner footer-flower" viewBox="0 0 300 400" aria-hidden="true"><use href="#bouquet"/></svg>
+  <p class="names small">Nata <span>&amp;</span> Javi</p>
+  <p class="caps">With love · 12 · 5 · 2026</p>
+  <button class="link-btn" id="replay" type="button">Open the envelope again ✉️</button>
+</footer>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" type="button" aria-label="Close">×</button>
+  <img alt="">
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>
